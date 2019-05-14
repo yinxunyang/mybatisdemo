@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyBatisUserServiceImpl implements MyBatisUserService {
     @Autowired
-    private MyBatisUserDao myBatisUserDao = null;
+    private MyBatisUserDao myBatisUserDao;
 
     @Override
     public User getUser(String id) {

@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**** imports ****/
+// 返回json格式
 @RestController
 public class MyBatisController {
 

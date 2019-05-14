@@ -5,6 +5,6 @@ spring:
     password: springboot
     driverClassName: oracle.jdbc.OracleDriver
 mybatis:
-  mapperLocations: classpath:mapper/*.xml
+  mapperLocations: classpath*:mapper/*.xml
   type_aliases_package: com.mybatisdemo.pojo
   dialect: com.haiercash.cmis.plr.common.mybatis.dialect.OracleDialect
