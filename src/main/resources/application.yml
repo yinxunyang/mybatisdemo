@@ -2,9 +2,13 @@ spring:
   datasource:
     url: jdbc:oracle:thin:@localhost:1521:orcl
     username: springboot
-    password: springboot
+    #password: springboot
+    password: ENC("h3zkQD8dGVZoOCBeLkNEx6hBqcvZf50n")
     driverClassName: oracle.jdbc.OracleDriver
 mybatis:
   mapperLocations: classpath*:mapper/*.xml
   type_aliases_package: com.mybatisdemo.pojo
   dialect: com.haiercash.cmis.plr.common.mybatis.dialect.OracleDialect
+jasypt:
+  encryptor:
+    password: 123456
