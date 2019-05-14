@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: springboot
+    password: springboot
+    driverClassName: oracle.jdbc.OracleDriver
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type_aliases_package: com.mybatisdemo.pojo
+  dialect: com.haiercash.cmis.plr.common.mybatis.dialect.OracleDialect
